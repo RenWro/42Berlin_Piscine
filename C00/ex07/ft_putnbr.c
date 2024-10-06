@@ -2,10 +2,10 @@
 
 void	ft_putchar(char c)
 {
-  write(1, &c, 1);
+	write(1, &c, 1);
 }
 
-void  ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
 	{
@@ -24,22 +24,17 @@ void  ft_putnbr(int nb)
 	ft_putchar(nb % 10 + '0');
 }
 
-int	main(void)
+/*int	main(void)
 {
 	ft_putnbr(42);
 	ft_putchar('\n');
-
 	ft_putnbr(-1234);
 	ft_putchar('\n');
-
 	ft_putnbr(0);
 	ft_putchar('\n');
-
 	ft_putnbr(2147483647);
 	ft_putchar('\n');
-
 	ft_putnbr(-2147483648);
 	ft_putchar('\n');
-
 	return (0);
-}
+}*/
