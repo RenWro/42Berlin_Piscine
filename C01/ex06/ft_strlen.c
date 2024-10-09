@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rwrobles <rwrobles@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: rwrobles <rwrobles@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:27:27 by rwrobles          #+#    #+#             */
-/*   Updated: 2024/10/08 18:30:03 by rwrobles         ###   ########.fr       */
+/*   Updated: 2024/10/09 13:51:58 by rwrobles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,13 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-// int	main(void)
+int	main(void)
+{
+	int		len;
+	char	*sent;
 
-// {
-// 	int		len;
-// 	char	*c;
-
-// 	c = "hello world!";
-// 	len = ft_strlen(c);
-// 	printf("%d", len);
-// 	return (0);
-// }
+	sent = "Hello 42!";
+	len = ft_strlen(sent);
+	printf("%d", len);
+	return (0);
+}
